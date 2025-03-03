@@ -1,0 +1,34 @@
+.product-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+::ng-deep .product-card .mat-mdc-card-title,
+::ng-deep .product-card .mat-mdc-card-subtitle {
+    color:#000 !important;
+}
+
+::ng-deep .product-card .mat-mdc-card-content p {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3 !important;
+    /* number of lines to show */
+    line-clamp: 3 !important;
+    /* number of lines to show */
+    -webkit-box-orient: vertical !important;
+}

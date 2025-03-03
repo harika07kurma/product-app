@@ -1,0 +1,10 @@
+.toolbar-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .toolbar-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+  }

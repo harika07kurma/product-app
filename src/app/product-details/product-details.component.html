@@ -1,0 +1,24 @@
+<div class="product-detail container mt-5" *ngIf="product">
+    <div class="row">
+        <!-- Product Images -->
+        <div class="col-md-6 mb-4">
+            <img [src]="product.image" alt="product-image" class="img-fluid rounded mb-3 product-image">    
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-md-6 product">
+            <h2 class="mb-3 product-title">{{ product.title}}</h2>
+            <p class="product-title text-muted mb-4">{{product.category}}</p>
+            <div class="mb-3 product-price ">
+                <span class="h4 me-2">${{ product.price }}</span>
+            </div>
+            <div class="mb-3 product-rating">
+                <span class=""><strong>Rating:</strong> {{product.rating.rate}}</span>
+            </div>
+            <div class="mt-4 product-description">
+                <h5>Description:</h5>
+               <p>{{ product.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
